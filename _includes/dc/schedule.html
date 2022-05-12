@@ -37,32 +37,32 @@ The schedule for the different curricula are listed here:
 {% elsif site.curriculum == "dc-ecology" %}
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Part I</h3>
     <table class="table table-striped">
       <tr>
 	<td>Before starting</td>
 	<td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
       </tr>
-      <tr><td>Morning</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
+      <tr><td>May 31</td> <td> <a href="https://datacarpentry.org/spreadsheet-ecology-lesson/">Data Organization in Spreadsheets</a></td></tr>
       <tr><td> </td><td><a href="https://datacarpentry.org/OpenRefine-ecology-lesson/">OpenRefine for Data Cleaning</a></td></tr>
       <tr>
-        <td>Afternoon</td>
-        <td>
-          {% if site.flavor == "r" %}
-          <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
-          {% elsif site.flavor == "python" %}
-          <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
-          {% else %}
-          {% include warning-flavor.html %}
-          {% endif %}
-      </td></tr>
-      <tr> <td>Evening</td> <td>END</td> </tr>
+        <td>June 1</td>
+        <td><a href="https://datacarpentry.org/organization-geospatial/">Introduction to Geospatial Concepts</a></td></tr>
+      <tr> <td>June 2</td> <td>
+        {% if site.flavor == "r" %}
+        <a href="https://datacarpentry.org/R-ecology-lesson/">Introduction to R</a>
+        {% elsif site.flavor == "python" %}
+        <a href="https://datacarpentry.org/python-ecology-lesson/">Introduction to Python</a>
+        {% else %}
+        {% include warning-flavor.html %}
+        {% endif %}
+      </td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>Part II</h3>
     <table class="table table-striped">
-      <tr> <td>Morning</td>
+      <tr> <td>June 7</td>
         <td>
           {% if site.flavor == "r" %}
           <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
@@ -73,9 +73,18 @@ The schedule for the different curricula are listed here:
           {% endif %}
         </td>
       </tr>
-      <tr> <td>Afternoon</td><td><a href="https://datacarpentry.org/sql-ecology-lesson/">Data Management with SQL</a></td></tr>
+      <tr> <td>June 8</td>
+        <td>
+          {% if site.flavor == "r" %}
+          <a href="https://datacarpentry.org/R-ecology-lesson/">Continuation of R: Data analysis and Visualization</a>
+          {% elsif site.flavor == "python" %}
+          <a href="https://datacarpentry.org/python-ecology-lesson/">Continuation of Python: Data analysis and Visualization</a>
+          {% else %}
+          {% include warning-flavor.html %}
+          {% endif %}
+        </td></tr>
       <tr>
-	<td>Evening</td>
+	<td>June 9</td>
 	<td><a href="{{ site.post_survey }}{{ site.github.project_title }}" target="_blank">Post-workshop survey</a></td>
       </tr>
       <tr>
